@@ -1,0 +1,29 @@
+{
+  "name": "wins",
+  "version": "1.0.0",
+  "description": "Personal CLI for tracking work accomplishments and GitHub PRs",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "wins": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.1.1",
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "date-fns": "^4.1.0",
+    "nanoid": "^5.1.5",
+    "openai": "^6.25.0",
+    "ora": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.3"
+  }
+}
