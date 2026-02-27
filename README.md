@@ -13,7 +13,6 @@ A personal CLI for capturing engineering wins and getting AI-powered summaries o
 ## Installation
 
 ```bash
-cd ~/Dev/wins
 npm install
 npm run build
 npm link
